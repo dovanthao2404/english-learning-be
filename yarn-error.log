@@ -1,0 +1,53 @@
+Arguments: 
+  C:\Program Files\nodejs\node.exe C:\Users\dovanthao\AppData\Roaming\npm\node_modules\yarn\bin\yarn.js add
+
+PATH: 
+  C:\Program Files (x86)\VMware\VMware Workstation\bin\;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\ProgramData\chocolatey\bin;C:\Program Files\Docker\Docker\resources\bin;C:\ProgramData\DockerDesktop\version-bin;C:\Program Files\Git\cmd;C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\bin;C:\Program Files\OpenJDK\openjdk-8u312-b07\bin;C:\Program Files\nodejs\;C:\Users\dovanthao\AppData\Local\Programs\Python\Python310\Scripts\;C:\Users\dovanthao\AppData\Local\Programs\Python\Python310\;C:\Users\dovanthao\AppData\Local\Microsoft\WindowsApps;C:\Program Files\JetBrains\PyCharm 2021.3.1\bin;C:\Users\dovanthao\AppData\Local\Programs\Microsoft VS Code\bin;C:\Program Files\JetBrains\PyCharm Community Edition 2021.3.1\bin;C:\Users\dovanthao\AppData\Local\atom\bin;C:\Users\dovanthao\AppData\Roaming\npm
+
+Yarn version: 
+  1.22.17
+
+Node version: 
+  14.18.0
+
+Platform: 
+  win32 x64
+
+Trace: 
+  SyntaxError: C:\Users\dovanthao\package.json: Unexpected end of JSON input
+      at JSON.parse (<anonymous>)
+      at C:\Users\dovanthao\AppData\Roaming\npm\node_modules\yarn\lib\cli.js:1625:59
+      at Generator.next (<anonymous>)
+      at step (C:\Users\dovanthao\AppData\Roaming\npm\node_modules\yarn\lib\cli.js:310:30)
+      at C:\Users\dovanthao\AppData\Roaming\npm\node_modules\yarn\lib\cli.js:321:13
+
+npm manifest: 
+  {
+    "name": "english-learning-be",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+      "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+      "type": "git",
+      "url": "git+https://github.com/dovanthao2404/english-learning-be.git"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "bugs": {
+      "url": "https://github.com/dovanthao2404/english-learning-be/issues"
+    },
+    "homepage": "https://github.com/dovanthao2404/english-learning-be#readme",
+    "dependencies": {
+      "express": "^4.17.2"
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
