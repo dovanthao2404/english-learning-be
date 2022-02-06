@@ -8,6 +8,7 @@ const checkExist = (Model, typeCheck, valueCheck) => async (req, res, next) => {
                 [typeCheck || "id"]: req.body[valueCheck || typeCheck] || id
             }
         });
+
         if (result) {
             next();
         } else {
@@ -19,4 +20,6 @@ const checkExist = (Model, typeCheck, valueCheck) => async (req, res, next) => {
     } catch (error) {
         res.status(500).send(error);
     }
-}
+};
+
+module.exports = { checkExist };

@@ -1,10 +1,13 @@
 const { Router } = require("express");
-const { register, login } = require("../controllers/user.controllers");
+const { authenticate } = require("../middlewares/auth/auth.middlewares");
+const { User } = require("../models");
+const { getUnitByUserId } = require("../controllers/user.controllers");
 
 const userRouter = Router();
 
 
-userRouter.post("/register", register);
-userRouter.post("/login", login);
+
+// get unit by user id
+userRouter.get("/:id", authenticate(User), getUnitByUserId);
 
 module.exports = { userRouter };
